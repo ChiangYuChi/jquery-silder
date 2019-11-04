@@ -1,39 +1,39 @@
 $(document).ready(function () {
-    $count = 1;
+    $pic = 1;
     $("#nxtbtn").click(function () {
-        if ($count == 1) {
+        if ($pic == 1) {
             shrink();
             $('#silder').delay(1000).animate({
                 left: "-100%"
             }, 1000);
             zoom();
 
-            $count = 2;
-        } else if ($count == 2) {
+            $pic = 2;
+        } else if ($pic == 2) {
             shrink();
             $('#silder').delay(1000).animate({
                 left: "-200%"
             }, 1000);
             zoom();
-            $count = 3;
+            $pic = 3;
         }
     });
 
     $("#prvbtn").click(function () {
-        if ($count == 3) {
+        if ($pic == 3) {
             shrink();
             $('#silder').delay(1000).animate({
                 left: "-100%"
             }, 1000)
             zoom();
-            $count = 2;
-        } else if ($count == 2) {
+            $pic = 2;
+        } else if ($pic == 2) {
             shrink();
             $('#silder').delay(1000).animate({
                 left: "0%"
             }, 1000)
             zoom();
-            $count = 1;
+            $pic = 1;
         }
     });
 
